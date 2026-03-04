@@ -1,0 +1,117 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+/* BODY */
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f4f7fa;
+}
+
+
+/* SIDEBAR */
+
+.sidebar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:240px;
+height:100vh;
+
+background:linear-gradient(180deg,#1b5e20,#2e7d32);
+
+padding:25px 15px;
+
+color:white;
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+font-family:'Playfair Display', serif;
+font-size:26px;
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+
+/* NAVIGATION LIST */
+
+.nav{
+list-style:none;
+}
+
+
+/* NAV ITEMS */
+
+.nav li{
+margin:12px 0;
+}
+
+
+/* NAV LINKS */
+
+.nav a{
+
+display:block;
+
+padding:12px 15px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+color:white;
+
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+
+/* HOVER EFFECT */
+
+.nav a:hover{
+
+background:#43a047;
+
+transform:translateX(6px);
+
+}
+
+
+/* ACTIVE LINK */
+
+.nav a.active{
+background:#66bb6a;
+}
+
+
+/* MAIN CONTENT AREA */
+
+.main{
+
+margin-left:240px;
+
+min-height:100vh;
+
+padding:0;
+
+}
