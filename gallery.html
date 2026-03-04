@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery - Uttarakhand</title>
+
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/gallery.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2 class="logo">Uttarakhand</h2>
+
+<ul class="nav">
+
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="about.html">🏔 About</a></li>
+<li><a href="temples.html">🛕 Temples</a></li>
+<li><a href="tourism.html">🌄 Tourist Places</a></li>
+<li><a href="treks.html">🥾 Treks</a></li>
+<li><a href="gallery.html" class="active">📸 Gallery</a></li>
+<li><a href="districts.html">🗺 Districts</a></li>
+
+</ul>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+<section class="page-header">
+
+<h1>Uttarakhand Gallery</h1>
+<p>Explore the beauty of Devbhoomi</p>
+
+</section>
+
+
+<section class="gallery-grid" id="galleryContainer"></section>
+
+</div>
+
+
+<!-- IMAGE POPUP -->
+
+<div id="imageModal" class="modal">
+
+<span class="close">&times;</span>
+
+<img class="modal-img" id="modalImage">
+
+</div>
+
+
+<script src="js/galleryData.js"></script>
+<script src="js/renderGallery.js"></script>
+
+</body>
+</html>

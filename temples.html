@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Temples of Uttarakhand</title>
+
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/temples.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2 class="logo">Uttarakhand</h2>
+
+<ul class="nav">
+
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="about.html">🏔 About</a></li>
+<li><a href="temples.html" class="active">🛕 Temples</a></li>
+<li><a href="tourism.html">🌄 Tourist Places</a></li>
+<li><a href="treks.html">🥾 Treks</a></li>
+<li><a href="gallery.html">📸 Gallery</a></li>
+<li><a href="districts.html">🗺 Districts</a></li>
+
+</ul>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<section class="page-header">
+
+<h1>Famous Temples of Uttarakhand</h1>
+<p>Devbhoomi is home to some of the most sacred temples in India.</p>
+
+</section>
+
+<div class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search tourist places...">
+
+</div>
+
+<section class="temples">
+
+<div class="cards" id="templeContainer"></div>
+
+</section>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+<div class="modal-box">
+
+<span class="close" onclick="document.getElementById('modal').style.display='none'">✖</span>
+
+<div id="modalContent"></div>
+
+</div>
+
+</div>
+
+<script src="js/templesData.js"></script>
+<script src="js/renderTemples.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

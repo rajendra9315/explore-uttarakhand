@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tourist Places - Uttarakhand</title>
+
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/tourism.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2 class="logo">Uttarakhand</h2>
+
+<ul class="nav">
+
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="about.html">🏔 About</a></li>
+<li><a href="temples.html">🛕 Temples</a></li>
+<li><a href="tourism.html" class="active">🌄 Tourist Places</a></li>
+<li><a href="treks.html">🥾 Treks</a></li>
+<li><a href="gallery.html">📸 Gallery</a></li>
+<li><a href="districts.html">🗺 Districts</a></li>
+
+</ul>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<section class="page-header">
+
+<h1>Tourist Places of Uttarakhand</h1>
+<p>Explore the most beautiful destinations of Devbhoomi.</p>
+
+</section>
+
+<div class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search tourist places...">
+
+</div>
+
+<section class="places">
+
+<div class="cards" id="placesContainer">
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<div id="modal" class="modal">
+
+<div class="modal-box">
+
+<span class="close" onclick="document.getElementById('modal').style.display='none'">✖</span>
+
+<div id="modalContent"></div>
+
+</div>
+
+</div>
+
+<script src="js/tourismData.js"></script>
+<script src="js/renderTourism.js"></script>
+<script src="js/search.js"></script>
+
+
+</body>
+</html>

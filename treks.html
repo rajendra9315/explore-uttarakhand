@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Treks - Uttarakhand</title>
+
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/treks.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2 class="logo">Uttarakhand</h2>
+
+<ul class="nav">
+
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="about.html">🏔 About</a></li>
+<li><a href="temples.html">🛕 Temples</a></li>
+<li><a href="tourism.html">🌄 Tourist Places</a></li>
+<li><a href="treks.html" class="active">🥾 Treks</a></li>
+<li><a href="gallery.html">📸 Gallery</a></li>
+<li><a href="districts.html">🗺 Districts</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="main">
+
+<section class="page-header">
+
+<h1>Famous Treks of Uttarakhand</h1>
+<p>Explore the most beautiful Himalayan trekking routes.</p>
+
+</section>
+
+
+<!-- SEARCH BAR -->
+
+<div class="search-box">
+
+<input type="text" id="searchInput" placeholder="Search treks...">
+
+</div>
+
+
+<section class="treks">
+
+<div class="cards" id="trekContainer"></div>
+
+</section>
+
+</div>
+
+
+<div id="modal" class="modal">
+
+<div class="modal-box">
+
+<span class="close" onclick="document.getElementById('modal').style.display='none'">✖</span>
+
+<div id="modalContent"></div>
+
+</div>
+
+</div>
+
+
+<script src="js/treksData.js"></script>
+<script src="js/renderTreks.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

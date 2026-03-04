@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Districts | Uttarakhand Tourism</title>
+
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/districts.css">
+
+</head>
+
+<body>
+
+<!--sidebar-->
+<div class="sidebar">
+
+<h2 class="logo">Uttarakhand</h2>
+
+<ul class="nav">
+
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="about.html" class="active">🏔 About</a></li>
+<li><a href="temples.html">🛕 Temples</a></li>
+<li><a href="tourism.html">🌄 Tourist Places</a></li>
+<li><a href="treks.html">🥾 Treks</a></li>
+<li><a href="gallery.html">📸 Gallery</a></li>
+<li><a href="districts.html">🗺 Districts</a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<!-- HEADER -->
+
+<section class="district-header">
+
+<div class="header-text">
+
+<h1>Discover the Districts of Uttarakhand</h1>
+
+<p>
+From sacred pilgrimage towns to breathtaking Himalayan valleys,  
+every district of Uttarakhand offers unique culture, history,  
+and unforgettable landscapes waiting to be explored.
+</p>
+
+<button onclick="scrollToDistricts()">Explore Districts</button>
+
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Uttarakhand_district_map.png">
+
+</section>
+
+<section class="map-section">
+
+<h2>Interactive Uttarakhand District Map</h2>
+
+<p>Click a district name to explore its culture, tourism and famous places.</p>
+
+<div class="map-container">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Uttarakhand_district_map.png">
+
+<div class="map-buttons">
+
+<button onclick="mapDistrict('Dehradun')">Dehradun</button>
+<button onclick="mapDistrict('Haridwar')">Haridwar</button>
+<button onclick="mapDistrict('Pauri Garhwal')">Pauri</button>
+<button onclick="mapDistrict('Tehri Garhwal')">Tehri</button>
+<button onclick="mapDistrict('Rudraprayag')">Rudraprayag</button>
+<button onclick="mapDistrict('Chamoli')">Chamoli</button>
+<button onclick="mapDistrict('Uttarkashi')">Uttarkashi</button>
+
+<button onclick="mapDistrict('Nainital')">Nainital</button>
+<button onclick="mapDistrict('Almora')">Almora</button>
+<button onclick="mapDistrict('Bageshwar')">Bageshwar</button>
+<button onclick="mapDistrict('Champawat')">Champawat</button>
+<button onclick="mapDistrict('Pithoragarh')">Pithoragarh</button>
+<button onclick="mapDistrict('Udham Singh Nagar')">Udham Singh Nagar</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search districts...">
+</div>
+
+
+<!-- DISTRICT GRID -->
+
+<div id="districtContainer" class="district-grid"></div>
+
+
+<!-- SIDE INFO PANEL -->
+
+<div id="districtDetails" class="details-panel"></div>
+
+</div>
+
+
+<script src="js/sidebar.js"></script>
+<script src="js/districtsData.js"></script>
+<script src="js/districts.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
